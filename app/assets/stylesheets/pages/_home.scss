@@ -1,1 +1,26 @@
 // Specific CSS for your home-page
+.wrapper {
+  background-image: asset-url('home-easymmo.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.home-text {
+  text-align: center;
+  padding-top: 15%;
+  font-size: 50px;
+  -webkit-text-stroke: 2px grey; /* Valeur de largeur et couleur de la bordure du texte pour l'effet de "texte épais" */
+  color: transparent; /* Rend le texte intérieur transparent */
+  animation: breathing 3s infinite alternate;
+}
+
+
+@keyframes breathing {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
